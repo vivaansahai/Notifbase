@@ -26,7 +26,8 @@ public class ActivityRecognitionIntentService extends IntentService {
 
 	@Override
 	protected void onHandleIntent(@Nullable Intent intent) {
-		if(intent == null) {
+		if(intent == null)
+		{
 			return;
 		}
 

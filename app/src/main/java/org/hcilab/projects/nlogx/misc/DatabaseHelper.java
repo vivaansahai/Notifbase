@@ -5,14 +5,16 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.provider.BaseColumns;
 
-public class DatabaseHelper extends SQLiteOpenHelper {
+public class DatabaseHelper extends SQLiteOpenHelper
+{
 
 	private static final int DATABASE_VERSION = 1;
 	private static final String DATABASE_NAME = "notifications.db";
 
 	// Posted notifications
 
-	public static abstract class PostedEntry implements BaseColumns {
+	public static abstract class PostedEntry implements BaseColumns
+	{
 		public static final String TABLE_NAME = "notifications_posted";
 		public static final String COLUMN_NAME_CONTENT = "content";
 	}

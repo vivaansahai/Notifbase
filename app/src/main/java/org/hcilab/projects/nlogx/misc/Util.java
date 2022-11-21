@@ -21,7 +21,8 @@ import org.hcilab.projects.nlogx.BuildConfig;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Util {
+public class Util
+{
 
 	public static String getAppNameFromPackage(Context context, String packageName, boolean returnNull) {
 		final PackageManager pm = context.getApplicationContext().getPackageManager();

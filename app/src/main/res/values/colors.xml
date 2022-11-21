@@ -3,12 +3,13 @@
 
     <color name="colorPrimary">#455a64</color>
     <color name="colorPrimaryDark">#263238</color>
-    <color name="colorAccent">#F4B400</color>
+    <color name="colorAccent">#00FFEA</color>
 
     <color name="colorDivider">#dcdcdc</color>
 
-    <color name="colorText">#202020</color>
-    <color name="colorTextMuted">#737373</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorContent">#000000</color>
+    <color name="colorTextMuted">#FFFFFF</color>
     <color name="colorTextWhite">#ffffff</color>
     <color name="colorTextDanger">#F44336</color>
 

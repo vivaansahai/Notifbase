@@ -40,7 +40,8 @@ public class SettingsFragment extends PreferenceFragmentCompat {
 		PreferenceManager pm = getPreferenceManager();
 
 		prefStatus = pm.findPreference(Const.PREF_STATUS);
-		if(prefStatus != null) {
+		if(prefStatus != null)
+		{
 			prefStatus.setOnPreferenceClickListener(preference -> {
 				startActivity(new Intent("android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS"));
 				return true;
@@ -58,20 +59,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
 		prefText    = pm.findPreference(Const.PREF_TEXT);
 		prefOngoing = pm.findPreference(Const.PREF_ONGOING);
 
-		Preference prefAbout = pm.findPreference(Const.PREF_ABOUT);
-		if(prefAbout != null) {
-			prefAbout.setOnPreferenceClickListener(preference -> {
-				Intent intent = new Intent(Intent.ACTION_VIEW);
-				intent.setData(Uri.parse("https://github.com/interactionlab/android-notification-log"));
-				startActivity(intent);
-				return true;
-			});
-		}
 
-		Preference prefVersion = pm.findPreference(Const.PREF_VERSION);
-		if(prefVersion != null) {
-			prefVersion.setSummary(BuildConfig.VERSION_NAME + (Const.DEBUG ? " dev" : ""));
-		}
 	}
 
 	@Override

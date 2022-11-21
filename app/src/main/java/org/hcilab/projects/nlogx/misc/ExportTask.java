@@ -51,10 +51,12 @@ public class ExportTask extends AsyncTask<Void, Void, Void> {
 	}
 
 	@Override
-	protected Void doInBackground(Void... params) {
+	protected Void doInBackground(Void... params)
+	{
 		// Create share folder
 		File exportPath = new File(context.getCacheDir(), "share");
-		if(!exportPath.exists()) {
+		if(!exportPath.exists())
+		{
 			boolean mkdirsResult = exportPath.mkdirs();
 			if(Const.DEBUG) {
 				System.out.println("Share directory created: " + mkdirsResult);

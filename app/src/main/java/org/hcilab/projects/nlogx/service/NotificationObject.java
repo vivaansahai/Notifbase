@@ -259,8 +259,8 @@ class NotificationObject {
 				json.put("textBig",           textBig);
 				json.put("textInfo",          textInfo);
 				json.put("textSub",           textSub);
-				json.put("textSummary",       textSummary);
-				json.put("textLines",         textLines);
+				json.put("You Have",       textSummary);
+				json.put("Content",         textLines);
 			}
 
 			json.put("appName", appName);
